@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GYNRDetailFourthVC">
+            <connections>
+                <outlet property="detailView" destination="e2e-pS-z1h" id="Ges-YS-0mr"/>
+                <outlet property="myCollectionView" destination="TJS-5S-xJ2" id="M2b-iW-E7o"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="OEv-xk-Nc4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2e-pS-z1h">
+                    <rect key="frame" x="10" y="114" width="355" height="483"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-5S-xJ2">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="483"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UVv-Vr-vjH">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="66T-bk-H2R"/>
+                                <outlet property="delegate" destination="-1" id="ojI-kB-hgY"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="TJS-5S-xJ2" firstAttribute="top" secondItem="e2e-pS-z1h" secondAttribute="top" id="IUl-KT-XEK"/>
+                        <constraint firstAttribute="bottom" secondItem="TJS-5S-xJ2" secondAttribute="bottom" id="Lku-Pp-Rfw"/>
+                        <constraint firstAttribute="trailing" secondItem="TJS-5S-xJ2" secondAttribute="trailing" id="PBE-o0-eYp"/>
+                        <constraint firstItem="TJS-5S-xJ2" firstAttribute="leading" secondItem="e2e-pS-z1h" secondAttribute="leading" id="eXE-wU-Gbv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="e2e-pS-z1h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="114" id="4sg-fe-AmF"/>
+                <constraint firstAttribute="bottom" secondItem="e2e-pS-z1h" secondAttribute="bottom" constant="70" id="Aws-ok-bdI"/>
+                <constraint firstAttribute="trailing" secondItem="e2e-pS-z1h" secondAttribute="trailing" constant="10" id="Iwj-aH-feo"/>
+                <constraint firstItem="e2e-pS-z1h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="J9P-wK-eLC"/>
+                <constraint firstAttribute="trailing" secondItem="OEv-xk-Nc4" secondAttribute="trailing" id="acQ-md-olh"/>
+                <constraint firstItem="OEv-xk-Nc4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h2I-Ln-j6B"/>
+                <constraint firstItem="OEv-xk-Nc4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ol3-5k-Xmr"/>
+                <constraint firstAttribute="bottom" secondItem="OEv-xk-Nc4" secondAttribute="bottom" id="s6b-bX-d2U"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="1080" height="1921"/>
+    </resources>
+</document>

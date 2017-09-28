@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GYGuideListVC">
+            <connections>
+                <outlet property="detailView" destination="aoK-Qd-N5c" id="WJf-pV-6MY"/>
+                <outlet property="myTableView" destination="Tob-Uw-6Ng" id="4D7-x7-3WM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pNw-B2-5NA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoK-Qd-N5c">
+                    <rect key="frame" x="8" y="70" width="359" height="572"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tob-Uw-6Ng">
+                            <rect key="frame" x="0.0" y="5" width="359" height="567"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="ARf-ht-Uz3"/>
+                                <outlet property="delegate" destination="-1" id="NiX-Pm-MGH"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Tob-Uw-6Ng" firstAttribute="top" secondItem="aoK-Qd-N5c" secondAttribute="top" constant="5" id="0YT-Zi-Md3"/>
+                        <constraint firstAttribute="bottom" secondItem="Tob-Uw-6Ng" secondAttribute="bottom" id="4fZ-Ib-tpC"/>
+                        <constraint firstAttribute="trailing" secondItem="Tob-Uw-6Ng" secondAttribute="trailing" id="Mg5-Ty-yTa"/>
+                        <constraint firstItem="Tob-Uw-6Ng" firstAttribute="leading" secondItem="aoK-Qd-N5c" secondAttribute="leading" id="Ow0-6S-Chd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aoK-Qd-N5c" secondAttribute="trailing" constant="8" id="3dH-IO-wvW"/>
+                <constraint firstAttribute="trailing" secondItem="pNw-B2-5NA" secondAttribute="trailing" id="7eS-Zo-DIz"/>
+                <constraint firstItem="aoK-Qd-N5c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="E3u-xB-2wP"/>
+                <constraint firstAttribute="bottom" secondItem="aoK-Qd-N5c" secondAttribute="bottom" constant="25" id="Kep-Wi-YU9"/>
+                <constraint firstItem="pNw-B2-5NA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="T98-YW-8iY"/>
+                <constraint firstItem="aoK-Qd-N5c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="f8h-a1-5Kf"/>
+                <constraint firstItem="pNw-B2-5NA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g8e-wc-Bbm"/>
+                <constraint firstAttribute="bottom" secondItem="pNw-B2-5NA" secondAttribute="bottom" id="oou-UW-En5"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="1080" height="1921"/>
+    </resources>
+</document>

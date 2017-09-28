@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="GYGuideListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCR-sT-t4p">
+                        <rect key="frame" x="8" y="5" width="304" height="65"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="查看详细_箭头" translatesAutoresizingMaskIntoConstraints="NO" id="EwX-X3-xmt">
+                                <rect key="frame" x="281" y="10" width="15" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="aee-0Y-cjy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0x5-lq-Awb">
+                                <rect key="frame" x="8" y="23" width="265" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19215686269999999" green="0.63137254899999995" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EwX-X3-xmt" firstAttribute="top" secondItem="BCR-sT-t4p" secondAttribute="top" constant="10" id="3Lr-se-Mah"/>
+                            <constraint firstAttribute="bottom" secondItem="EwX-X3-xmt" secondAttribute="bottom" constant="10" id="5al-Ly-bd6"/>
+                            <constraint firstItem="0x5-lq-Awb" firstAttribute="leading" secondItem="BCR-sT-t4p" secondAttribute="leading" constant="8" id="9qu-fb-Hma"/>
+                            <constraint firstItem="EwX-X3-xmt" firstAttribute="leading" secondItem="0x5-lq-Awb" secondAttribute="trailing" constant="8" id="WHi-8W-VsE"/>
+                            <constraint firstAttribute="trailing" secondItem="EwX-X3-xmt" secondAttribute="trailing" constant="8" id="XuL-Bm-3pt"/>
+                            <constraint firstItem="0x5-lq-Awb" firstAttribute="centerY" secondItem="BCR-sT-t4p" secondAttribute="centerY" id="iO9-WU-xcq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BCR-sT-t4p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="7KI-hU-AS4"/>
+                    <constraint firstAttribute="bottom" secondItem="BCR-sT-t4p" secondAttribute="bottom" constant="5" id="dgv-kc-ody"/>
+                    <constraint firstAttribute="trailing" secondItem="BCR-sT-t4p" secondAttribute="trailing" constant="8" id="hJo-tZ-fsQ"/>
+                    <constraint firstItem="BCR-sT-t4p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="xDY-8e-I2d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailView" destination="BCR-sT-t4p" id="kQq-mE-ljd"/>
+                <outlet property="titleLabel" destination="0x5-lq-Awb" id="z4G-RO-YX7"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="36"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="查看详细_箭头" width="50" height="90"/>
+    </resources>
+</document>

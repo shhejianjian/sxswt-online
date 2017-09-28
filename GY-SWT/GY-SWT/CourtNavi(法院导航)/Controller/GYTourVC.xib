@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GYTourVC">
+            <connections>
+                <outlet property="myTableView" destination="qv0-hb-Gj7" id="LGl-Xj-XUN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sez-vF-aSr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qv0-hb-Gj7">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dTj-Ss-MVD"/>
+                        <outlet property="delegate" destination="-1" id="GNJ-DP-gpZ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sez-vF-aSr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3bw-nd-g6t"/>
+                <constraint firstItem="qv0-hb-Gj7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GEv-R5-Ehi"/>
+                <constraint firstAttribute="trailing" secondItem="sez-vF-aSr" secondAttribute="trailing" id="GRT-4x-pdy"/>
+                <constraint firstItem="sez-vF-aSr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HeV-lv-0lh"/>
+                <constraint firstAttribute="trailing" secondItem="qv0-hb-Gj7" secondAttribute="trailing" id="UJA-t3-ifP"/>
+                <constraint firstAttribute="bottom" secondItem="qv0-hb-Gj7" secondAttribute="bottom" id="bTM-IM-K5r"/>
+                <constraint firstItem="qv0-hb-Gj7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="jWY-Ef-yMX"/>
+                <constraint firstAttribute="bottom" secondItem="sez-vF-aSr" secondAttribute="bottom" id="tii-tZ-TBr"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="1080" height="1921"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" customClass="GYWssdListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iu1-Me-32G">
+                        <rect key="frame" x="10" y="10" width="300" height="86"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrM-Dd-4fy">
+                                <rect key="frame" x="8" y="12" width="31" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（2015）中区法民初字第05388号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAU-b9-NQ2">
+                                <rect key="frame" x="8" y="63" width="233" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="查看详细_箭头" translatesAutoresizingMaskIntoConstraints="NO" id="VL4-9Q-f4Z">
+                                <rect key="frame" x="277" y="30" width="15" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="a6j-pt-nFV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19215686269999999" green="0.63137254899999995" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VL4-9Q-f4Z" secondAttribute="bottom" constant="30" id="4bW-hL-ilt"/>
+                            <constraint firstItem="HAU-b9-NQ2" firstAttribute="leading" secondItem="Iu1-Me-32G" secondAttribute="leading" constant="8" id="EBb-bW-o7t"/>
+                            <constraint firstAttribute="trailing" secondItem="VL4-9Q-f4Z" secondAttribute="trailing" constant="8" id="EXE-Gw-zwC"/>
+                            <constraint firstItem="VL4-9Q-f4Z" firstAttribute="top" secondItem="Iu1-Me-32G" secondAttribute="top" constant="30" id="OdZ-Sa-w0J"/>
+                            <constraint firstItem="jrM-Dd-4fy" firstAttribute="leading" secondItem="Iu1-Me-32G" secondAttribute="leading" constant="8" id="TlM-84-Tvt"/>
+                            <constraint firstAttribute="bottom" secondItem="HAU-b9-NQ2" secondAttribute="bottom" constant="5" id="V72-pj-0cJ"/>
+                            <constraint firstItem="jrM-Dd-4fy" firstAttribute="top" secondItem="Iu1-Me-32G" secondAttribute="top" constant="12" id="jH9-aH-UJs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Iu1-Me-32G" secondAttribute="bottom" constant="5" id="1xy-7C-xZY"/>
+                    <constraint firstAttribute="trailing" secondItem="Iu1-Me-32G" secondAttribute="trailing" constant="10" id="Aq9-cM-f0a"/>
+                    <constraint firstItem="Iu1-Me-32G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Yss-9D-CwQ"/>
+                    <constraint firstItem="Iu1-Me-32G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="pSc-mO-ZLO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ahqcLabel" destination="jrM-Dd-4fy" id="NDN-YR-yz2"/>
+                <outlet property="detailView" destination="Iu1-Me-32G" id="Hbo-ZI-I8F"/>
+                <outlet property="titleLabel" destination="HAU-b9-NQ2" id="01L-fx-ekv"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="107"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="查看详细_箭头" width="50" height="90"/>
+    </resources>
+</document>

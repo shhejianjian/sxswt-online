@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GYNetRegistVC">
+            <connections>
+                <outlet property="addNewRegistBtn" destination="LpI-ey-ojO" id="bit-rg-Z8F"/>
+                <outlet property="detailView" destination="JId-Zs-STm" id="PdT-B6-kf2"/>
+                <outlet property="myTableView" destination="49S-GK-2At" id="5UO-OA-6Lm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="i1b-Uw-bPx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JId-Zs-STm">
+                    <rect key="frame" x="10" y="74" width="355" height="523"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="49S-GK-2At">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="523"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="wKS-OK-taY"/>
+                                <outlet property="delegate" destination="-1" id="p5K-EI-8Ra"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="49S-GK-2At" secondAttribute="trailing" id="Mr8-nb-R5p"/>
+                        <constraint firstItem="49S-GK-2At" firstAttribute="top" secondItem="JId-Zs-STm" secondAttribute="top" id="Sbr-hb-vDI"/>
+                        <constraint firstAttribute="bottom" secondItem="49S-GK-2At" secondAttribute="bottom" id="ik5-78-p0Z"/>
+                        <constraint firstItem="49S-GK-2At" firstAttribute="leading" secondItem="JId-Zs-STm" secondAttribute="leading" id="uBy-q4-ETT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbC-RE-QOc">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpI-ey-ojO">
+                            <rect key="frame" x="118" y="15" width="140" height="30"/>
+                            <color key="backgroundColor" red="0.81960784310000001" green="0.16862745100000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="4a0-oB-rwl"/>
+                                <constraint firstAttribute="height" constant="30" id="qK9-uV-Dgi"/>
+                            </constraints>
+                            <state key="normal" title="新增立案">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addNewCase:" destination="-1" eventType="touchUpInside" id="pJA-Gi-2IG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.047058823530000002" green="0.23137254900000001" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="LpI-ey-ojO" firstAttribute="centerX" secondItem="kbC-RE-QOc" secondAttribute="centerX" id="dsm-va-4kL"/>
+                        <constraint firstAttribute="height" constant="60" id="hYf-T4-Cj9"/>
+                        <constraint firstItem="LpI-ey-ojO" firstAttribute="centerY" secondItem="kbC-RE-QOc" secondAttribute="centerY" id="rCJ-fM-s9L"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JId-Zs-STm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="2Wb-q9-Hvf"/>
+                <constraint firstItem="kbC-RE-QOc" firstAttribute="top" secondItem="JId-Zs-STm" secondAttribute="bottom" constant="10" id="8v3-b3-PB8"/>
+                <constraint firstAttribute="trailing" secondItem="i1b-Uw-bPx" secondAttribute="trailing" id="DT7-2i-OoN"/>
+                <constraint firstItem="i1b-Uw-bPx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GXk-nm-eZh"/>
+                <constraint firstItem="kbC-RE-QOc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ltn-dP-2Ic"/>
+                <constraint firstItem="JId-Zs-STm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Nog-Iw-biG"/>
+                <constraint firstAttribute="bottom" secondItem="i1b-Uw-bPx" secondAttribute="bottom" id="XRM-8K-FO6"/>
+                <constraint firstAttribute="trailing" secondItem="kbC-RE-QOc" secondAttribute="trailing" id="jlw-wE-9H1"/>
+                <constraint firstAttribute="bottom" secondItem="kbC-RE-QOc" secondAttribute="bottom" id="kiM-XW-LgD"/>
+                <constraint firstItem="i1b-Uw-bPx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ppB-eJ-1SO"/>
+                <constraint firstAttribute="trailing" secondItem="JId-Zs-STm" secondAttribute="trailing" constant="10" id="rO0-fC-3Km"/>
+            </constraints>
+            <point key="canvasLocation" x="-453" y="8"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="1080" height="1921"/>
+    </resources>
+</document>

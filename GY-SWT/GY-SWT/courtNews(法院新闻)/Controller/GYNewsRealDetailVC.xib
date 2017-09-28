@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GYNewsRealDetailVC">
+            <connections>
+                <outlet property="myWebView" destination="Aql-f7-Txg" id="2tH-R5-Srf"/>
+                <outlet property="timeLabel" destination="gGE-3j-Xe4" id="Udi-2A-8GO"/>
+                <outlet property="titleLabel" destination="ePw-l9-pjl" id="8Ya-aj-hW2"/>
+                <outlet property="titleViewHeightConstraint" destination="gJ3-hb-QvC" id="McQ-Bb-mxl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8VU-bP-yyV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxM-F0-WZO">
+                    <rect key="frame" x="0.0" y="64" width="375" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePw-l9-pjl">
+                            <rect key="frame" x="10" y="10" width="355" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGE-3j-Xe4">
+                            <rect key="frame" x="8" y="74" width="359" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ePw-l9-pjl" secondAttribute="trailing" constant="10" id="777-29-zew"/>
+                        <constraint firstAttribute="bottom" secondItem="gGE-3j-Xe4" secondAttribute="bottom" constant="8" id="9Us-Js-1n4"/>
+                        <constraint firstItem="ePw-l9-pjl" firstAttribute="leading" secondItem="zxM-F0-WZO" secondAttribute="leading" constant="10" id="LaP-DE-kyY"/>
+                        <constraint firstItem="ePw-l9-pjl" firstAttribute="top" secondItem="zxM-F0-WZO" secondAttribute="top" constant="10" id="OV9-hg-bx4"/>
+                        <constraint firstAttribute="height" constant="100" id="gJ3-hb-QvC"/>
+                        <constraint firstItem="gGE-3j-Xe4" firstAttribute="leading" secondItem="zxM-F0-WZO" secondAttribute="leading" constant="8" id="i6E-pn-oSQ"/>
+                        <constraint firstAttribute="trailing" secondItem="gGE-3j-Xe4" secondAttribute="trailing" constant="8" id="o9h-v1-e2g"/>
+                    </constraints>
+                </view>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aql-f7-Txg">
+                    <rect key="frame" x="0.0" y="164" width="375" height="503"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Aql-f7-Txg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9vz-mD-9ly"/>
+                <constraint firstAttribute="trailing" secondItem="zxM-F0-WZO" secondAttribute="trailing" id="Ila-4w-4VA"/>
+                <constraint firstAttribute="trailing" secondItem="Aql-f7-Txg" secondAttribute="trailing" id="JPj-ht-jQX"/>
+                <constraint firstItem="8VU-bP-yyV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="b72-HH-2wp"/>
+                <constraint firstAttribute="bottom" secondItem="Aql-f7-Txg" secondAttribute="bottom" id="btM-J2-WhT"/>
+                <constraint firstAttribute="bottom" secondItem="8VU-bP-yyV" secondAttribute="bottom" id="cER-7K-qCA"/>
+                <constraint firstItem="Aql-f7-Txg" firstAttribute="top" secondItem="zxM-F0-WZO" secondAttribute="bottom" id="eiU-7u-kif"/>
+                <constraint firstItem="8VU-bP-yyV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="msb-6w-jWk"/>
+                <constraint firstAttribute="trailing" secondItem="8VU-bP-yyV" secondAttribute="trailing" id="nes-aM-6h3"/>
+                <constraint firstItem="zxM-F0-WZO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ngz-S7-H5p"/>
+                <constraint firstItem="zxM-F0-WZO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yhV-dt-VXR"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="1080" height="1921"/>
+    </resources>
+</document>

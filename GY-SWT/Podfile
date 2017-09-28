@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+target 'GY-SWT' do
+pod 'AFNetworking','~> 3.1.0'
+pod 'MJExtension'
+pod 'MJRefresh','~> 2.5.0'
+pod 'SVProgressHUD'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'WHC_AutoLayoutKit'
+pod 'KNSemiModalViewController_hons82', '~> 0.4.4'
+end
